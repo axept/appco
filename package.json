@@ -1,0 +1,16 @@
+{
+  "name": "appco",
+  "version": "0.1.0",
+  "description": "Application configuration utility",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --config jest.json"
+  },
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/axept/appco"
+  },
+  "bugs": "https://github.com/axept/appco/issues",
+}

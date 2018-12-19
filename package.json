@@ -1,12 +1,13 @@
 {
   "name": "appco",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Application configuration utility",
   "main": "lib/index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/",
     "clean": "rm -rf lib",
     "build": "babel src --out-dir lib",
-    "prepublish": "npm run clean && npm run build"
+    "prepublish": "npm run lint && npm run clean && npm run build"
   },
   "author": "",
   "license": "MIT",
@@ -16,9 +17,11 @@
   },
   "bugs": "https://github.com/axept/appco/issues",
   "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-cli": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1"
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.0",
+    "eslint": "^5.10.0",
+    "eslint-config-axept-base": "^1.1.0",
+    "eslint-plugin-import": "^2.14.0"
   }
 }

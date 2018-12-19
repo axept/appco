@@ -1,0 +1,19 @@
+{
+  "extends": "axept-base",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "import/no-dynamic-require": "off",
+    "no-param-reassign": "off",
+    "no-console": "off"
+  }
+}
